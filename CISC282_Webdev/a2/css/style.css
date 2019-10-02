@@ -1,0 +1,184 @@
+/*
+sans-serif fonts:
+Open Sans, Lucida Grande, Lucida Sans Unicode, Helvetica Neue, Arial, sans-serif
+*/
+
+/*
+serif fonts:
+Palatino, Book Antiqua, Georgia, serif
+*/
+
+/*
+requirements to fix:
+- correct titles in headers
+- the fonts
+- fill the space (both horizontal and vertical) so the user can touch/click anywhere in the "box" to activate the link
+*/
+
+html, body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    line-height: 1.25;
+    font-size: 1rem;
+}
+
+h1 {
+    font-size: 1.75rem;
+}
+
+h2 {
+    font-size: 1.625rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 1.375rem;
+}
+
+h5 {
+    font-size: 1.25rem;
+}
+
+h6 {
+    font-size: 1.125rem;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+table {
+    margin-bottom: 32px;
+}
+
+thead, tfoot {
+    background-color: #eee;
+}
+
+td {
+    padding: 8px 16px 8px 16px;
+}
+
+header {
+    color: #fff;
+    width: 100%;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+header ul {
+    list-style: none;
+    padding-left: 0px;
+    width: 100%;
+}
+
+header a, header a:link, header a:visited, header a:link:active, header a:visited:active, header {
+    color: #fff;
+    text-decoration: none;
+}
+
+header li  {
+    padding-left: 32px;
+    padding-right: 32px;
+}
+
+header nav li {
+    width: 100%;
+    border-bottom: 1px rgba(255, 255, 255, 0.5) dotted;
+    font-size: 1.125rem;
+    font-weight: bold;
+    padding: 12px 32px 12px 32px;
+}
+
+nav > ul {
+    margin: 0;
+}
+
+main, section, article > h1 {
+    margin-left: 32px;
+    margin-right: 32px;
+}
+
+main, article {
+    margin-top: 32px;
+    margin-bottom: 64px;
+}
+
+blockquote {
+    margin-left: 16px;
+    padding: 16px 16px 16px 16px;
+    background-color: #eee;
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.25);
+}
+
+section a, section a:link, section a:visited, section a:link:active, section a:visited:active {
+    color: #662d91;
+    text-decoration: none;
+}
+
+footer {
+    color: #fff;
+    padding: 32px 32px 64px 32px;
+    background-color: #a91639;
+}
+
+footer > img {
+    width: 100%;
+}
+
+footer a, footer a:link, footer a:visited, footer a:link:active, footer a:visited:active {
+    color: #fff;
+}
+
+footer i {
+    font-size: 1rem;
+}
+
+footer ul {
+    margin-top: 8px;
+    margin-bottom: 32px;
+}
+
+.logo {
+    display: none;
+}
+
+.wordmark {
+    background-color: #fff;
+    width: 200px;
+    padding: 8px 32px 0px 32px;
+}
+
+.header-container {
+    background-color: #002f5e;
+}
+
+.title, .title:link, .title:visited, .title:link:active, .title a:visited:active {
+    display: inline-block;
+    width: 100%;
+    font-size: 2rem;
+    color: #fff;
+    text-decoration: none;
+    padding: 16px 32px 16px 32px;
+    border-bottom: 1px rgba(255, 255, 255, 0.5) dotted;
+}
+
+.title:hover {
+    cursor: pointer;
+}
+
+.social-link {
+    font-size: 1.5rem;
+    padding: 8px 0px 8px 0px;
+}
+
+.footer-text {
+    margin-left: 50%;
+}

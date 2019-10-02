@@ -165,7 +165,6 @@ public class Assn1_18kdm2 {
 		}
 		
 		computerScore += turnSum;
-		
 	}
 	
 	/*
@@ -175,6 +174,25 @@ public class Assn1_18kdm2 {
 		System.out.println("");
 		System.out.println("Your score: " + playerScore + ". My score: " + computerScore + ".");
 		System.out.println("");
+	}
+	
+	/*
+	 * Code at the end of a round to continue the round
+	 */
+	private static boolean concludeRound() {
+		String consumeScanner;
+		
+		// Check if someone won, if so, end the round
+		if (playerScore >= 100 || computerScore >= 100) {
+			return false;
+		}
+		
+		// Create a pause so the user can see what happened during the round
+		System.out.println("Enter anything to begin next round ");
+		consumeScanner = in.next();
+		consumeScanner = in.nextLine();
+		
+		return true;
 	}
 	
 	/**
@@ -201,17 +219,7 @@ public class Assn1_18kdm2 {
 			
 			outputScore();
 			
-			// Check if someone won, if so, end the round
-			if (playerScore >= 100 || computerScore >= 100) {
-				playing = false;
-			}
-			
-			// Create a pause so the user can see what happened during the round
-			if (playing) {
-				System.out.println("Enter anything to begin next round ");
-				consumeScanner = in.next();
-				consumeScanner = in.nextLine();
-			}
+			playing = concludeRound();
 			
 			round += 1;
 		}
