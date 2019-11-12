@@ -1,0 +1,167 @@
+/*****************************************************************************/
+/* Some landscape phones and larger (576px) */
+/*****************************************************************************/
+@media only screen and (min-width: 576px) {
+    /***********/
+    /* Colours */
+    /***********/
+    #site-title, header nav a, header .social {
+        background-color: rgba(0, 0, 0, 0.65);
+    }
+    
+    header a {
+        transition: all 2s;
+    }    
+    
+    header a:hover {
+        color: #000;
+        background-color: rgba(255, 255, 255, 0.75);
+    }
+
+    /***********/
+    /* Columns */
+    /***********/
+    .column-container {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .column-container .column { 
+        flex: 1;
+        background-color: #eee;        
+        padding: 16px;
+        margin-left: 8px;
+        margin-right: 8px;
+        box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+    }
+    
+    
+    /**********/
+    /* Header */
+    /**********/
+    #hero-container {
+        position: relative;
+        height: 33vh;
+        min-height: 250px;
+        background-image: url("../img/bee-collecting-pollen.jpg");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+    }
+    
+    #wordmark {
+        padding-left: 10%;
+    }
+
+    #site-title {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    header nav a {
+        width: 100px;
+        padding-left: 10%;
+        border-right: 1px dotted rgba(255, 255, 255, 0.5);
+    }
+    
+    header .social {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        padding-left: 16px;
+        padding-right: 10%;
+        border-top: 1px dotted rgba(255, 255, 255, 0.5);
+        border-left: 1px dotted rgba(255, 255, 255, 0.5);        
+    }
+
+    header .social ul {
+        overflow: hidden;    
+    }
+    
+    header .social li {
+        float: left;
+    }
+    
+    /***********/
+    /* Content */
+    /***********/
+    article, main {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+        
+    /**********/
+    /* Footer */
+    /**********/
+    footer {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+
+    /***********/
+    /* Gallery */
+    /***********/
+    .thumbnail-gallery figure img {
+        height: 150px;
+    }
+}
+
+
+/*****************************************************************************/
+/* Some tablets and larger (768px) */
+/*****************************************************************************/
+@media only screen and (min-width: 768px) {
+    #logo {
+        display: block;
+        width: 100px;
+        position: absolute;
+        top: 0;
+        right: 10%;
+    }
+
+    #unit-signature {
+        width: 600px;
+    }
+
+    #address, #phone-and-email {
+        margin-left: 298px;    
+    }
+}
+
+
+/*****************************************************************************/
+/* Some desktops and larger (992px) */
+/*****************************************************************************/
+@media only screen and (min-width: 992px) {
+    #site-title {
+        font-size: 2.5rem;    
+    }
+    
+    h1 {
+        font-size: 2rem; 
+    }
+    
+    h2  {
+        font-size: 1.75rem; 
+    }
+
+    /***********/
+    /* Gallery */
+    /***********/
+    .thumbnail-gallery figure img {
+        height: 200px;
+    }
+}
+
+
+/*****************************************************************************/
+/* Desktops and larger (1200px) */
+/*****************************************************************************/
+@media only screen and (min-width: 1200px) {   
+    footer {
+        background-image: url("../img/fas-diamonds.png");
+        background-repeat: no-repeat;
+        background-position: right center;
+        background-size: auto 100%;
+    }
+}
