@@ -44,8 +44,8 @@ public abstract class Fastener implements Serializable {
 		this.numPerUnit = numPerUnit;
 	}
 	
-	public Double getOrderCost() {
-		return unitPrice * numPerUnit;
+	public Double getOrderCost(int units) {
+		return unitPrice * units;
 	}
 	
 	public String toString() {

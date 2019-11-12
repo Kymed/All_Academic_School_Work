@@ -1,10 +1,10 @@
 import java.io.Serializable;
 
-public abstract class ThreadedSizedFastener extends ThreadedFastener implements Serializable {
+public abstract class ExternalThreaded extends InnerThreaded implements Serializable {
 	
 	private static final long serialVersionUID = 5801942167162967899L;
 	private double length;
-	public ThreadedSizedFastener(double unitPrice, int numPerUnit, Threads thread, double length, Enum<?> material, Enum<?> finish) throws IllegalFastener {
+	public ExternalThreaded(double unitPrice, int numPerUnit, Threads thread, double length, Enum<Materials.ThreadedMaterials> material, Enum<?> finish) throws IllegalFastener {
 		super(unitPrice, numPerUnit, thread, material, finish);
 		setLength(length);
 	}

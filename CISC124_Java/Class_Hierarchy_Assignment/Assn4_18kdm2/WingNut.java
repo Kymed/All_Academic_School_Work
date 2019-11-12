@@ -1,6 +1,6 @@
 import java.io.Serializable;
 
-public class WingNut extends Nut implements Serializable{
+public class WingNut extends InnerThreaded implements Serializable{
 	
 	private static final long serialVersionUID = 605932837325341333L;
 

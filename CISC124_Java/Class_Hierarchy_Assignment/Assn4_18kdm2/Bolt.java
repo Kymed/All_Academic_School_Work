@@ -1,6 +1,6 @@
 import java.io.Serializable;
 
-public abstract class Bolt extends ThreadedSizedFastener implements Serializable{
+public abstract class Bolt extends ExternalThreaded implements Serializable{
 	
 	private static final long serialVersionUID = 821042847710334954L;
 
